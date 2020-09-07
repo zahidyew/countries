@@ -6,6 +6,7 @@ import CountryRow from './components/CountryRow';
 import Search from './components/Search';
 import CountryPage from './components/pages/CountryPage';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
