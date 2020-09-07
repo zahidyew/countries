@@ -11,7 +11,7 @@ const CountryRow = ({countries}) => {
             <tr>
                <th>No.</th>
                <th>Country</th>
-               <th>Region</th>
+               <th>Continent</th>
                <th>Population</th>
                <th>Flag</th>
             </tr>

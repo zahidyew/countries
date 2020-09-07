@@ -30,7 +30,7 @@ const CountryItem = ({row, country}) => {
       <tr>
          <td> {row} </td>
          <td> <Link to={pageUrl} style={linkStyle}> {country.name} </Link>  </td>
-         <td> {country.subregion} </td>
+         <td> {country.region} </td>
          <td> {formatNumber(country.population, '0,0')} </td>
          <td style={flagColStyle}> <img src={country.flag} alt={country.name} style={imgStyle} /> </td>
       </tr>    
