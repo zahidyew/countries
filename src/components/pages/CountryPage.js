@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import numeral from 'numeral';
 import Table from 'react-bootstrap/Table';
+import CountryMap from '../CountryMap'
 
 const CountryPage = ({match}) => {
    const countryCode = match.params.code;
@@ -51,11 +52,6 @@ const CountryPage = ({match}) => {
          </div>
          <h2 style={flexCenter(0,'1rem')}> {country.name} </h2>
          <Table responsive striped bordered hover variant="dark">
-            <thead>
-               {/* <tr>
-                  <th></th>
-               </tr> */}
-            </thead>
             <tbody>
                <tr>
                   <td> Capital </td>
@@ -87,6 +83,8 @@ const CountryPage = ({match}) => {
                </tr>
             </tbody>
          </Table>
+         <CountryMap latlng={country.latlng} />
+         
          {/* <div>
             <p> <label style={labelStyle}> Capital </label> : {country.capital} </p>
             <p> <label style={labelStyle}> Region </label> : {country.region} </p>
@@ -116,8 +114,8 @@ const imgStyle = {
    height: '150px'
 }
 
-const labelStyle = {
+/* const labelStyle = {
    width: '110px'
-}
+} */
 
 export default CountryPage
