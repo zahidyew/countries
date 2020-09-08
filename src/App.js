@@ -58,7 +58,7 @@ function App() {
     <Router>
       <div className="container">
         <Header />
-        <Route exact path="/" render={props => (
+        <Route exact path="/countries" render={props => (
           <>
             <div className='select-search-div'>
               <Select getChoice={(value) => setChoice(value)} />
